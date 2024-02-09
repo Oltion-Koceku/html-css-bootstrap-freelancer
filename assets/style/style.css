@@ -10,17 +10,28 @@
   --header: #2c3e50;
   --start: #1abc9c;
   --location: #3a546d;
+  --opacity: #2db5a3;
 }
 
 header {
   background-color: var(--header);
   height: 70px;
+  width: 100%;
+  z-index: 999;
 }
-section{
-padding: 70px 0;
+main{
+padding-top: 70px;
 }
-h2{
-font-weight: 700;
+section {
+  padding: 70px 0;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 32px;
+}
+h3{
+font-size: 13px;
 }
 .container-sc {
   width: 70%;
@@ -41,10 +52,6 @@ font-weight: 700;
 a {
   text-decoration: none;
   color: black;
-}
-
-h2 {
-  font-size: 40px;
 }
 
 /* utility */
@@ -77,11 +84,12 @@ h2 {
 .star {
   width: 100%;
   height: 30px;
+  margin: 40px 0;
 }
 
 .star div:first-child,
 .star div:last-child {
-  width: 13%;
+  width: 75px;
   height: 5px;
   background-color: white;
 }
@@ -106,68 +114,139 @@ h2 {
 .hamburger i {
   font-size: 25px;
 }
-.logo h1{
-font-size: 20px;
-font-weight: 700;
+
+.logo h1 {
+  font-size: 20px;
+  font-weight: 700;
 }
-div nav ul{
-width: 250px;
+
+div nav ul {
+  width: 250px;
 }
+
 /* main */
 section.start {
   background-color: var(--start);
 }
+
 section.about {
   background-color: var(--start);
   color: white;
 }
-.about button{
-background-color: var(--start);
+
+.about button {
+  background-color: var(--start);
+}
+/* hero */
+.hero{
+width: 400px;
 }
 /* card */
-/* portfolio */
-.p-card-left{
-padding-left: 20px;
+.card-sc:hover{
+background-color: var(--opacity);
 }
-.p-card-right{
-padding-right: 20px;
+.card-sc img:hover{
+opacity: 0.3;
 }
-.p-card-top{
-padding-top: 20px;
-}
-.p-card-bottom{
-padding-bottom: 20px;
-}
-/* footer */
-footer section{
-padding: 0;
-color: white;
-}
-section.footer-top{
-background-color: var(--location);
-}
-section.footer-bottom{
-background-color: var(--header);
-}
-.social{
-border-radius: 50%;
-width: 40px;
-height: 40px;
-border:1px solid white;
-}
-.social i{
-font-size: 20px;
+.plus{
+top: 34%;
+right: 40%;
+display: none;
 }
 
-.footer-top .container-sce .row{
-padding: 70px 0;
+.card-sc:hover .plus{
+display: block;
 }
-.container-sce .row .col-12{
-padding-bottom: 50px;
+
+.plus i{
+font-size: 100px;
+color: white;
 }
-.container-sce .row .col-12:last-child{
-padding-bottom: 0px;
+/* portfolio */
+.p-card-left {
+  padding-left: 20px;
 }
-.footer-bottom{
-padding: 30px 0;
+
+.p-card-right {
+  padding-right: 20px;
+}
+
+.p-card-top {
+  padding-top: 20px;
+}
+
+.p-card-bottom {
+  padding-bottom: 20px;
+}
+
+/* footer */
+footer section {
+  padding: 0;
+  color: white;
+}
+
+section.footer-top {
+  background-color: var(--location);
+}
+
+section.footer-bottom {
+  background-color: var(--header);
+}
+
+.social {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+}
+
+.social i {
+  font-size: 20px;
+}
+
+.footer-top .container-sce .row {
+  padding: 70px 0;
+}
+
+.container-sce .row .col-12 {
+  padding-bottom: 50px;
+}
+
+.container-sce .row .col-12:last-child {
+  padding-bottom: 0px;
+}
+
+.footer-bottom {
+  padding: 30px 0;
+}
+
+/* responsive */
+@media screen and (min-width:768px) {
+
+  .star div:first-child,
+  .star div:last-child {
+    width: 140px;
+    height: 5px;
+    background-color: white;
+  }
+
+  h2{
+    font-size: 50px;
+  }
+  h3{
+  font-size: 24px;
+  }
+
+  .container-sce .row .col-12 {
+    padding-bottom: 0px;
+  }
+}
+@media screen and (min-width:1200px) {
+  
+  .star div:first-child,
+  .star div:last-child {
+    width: 180px;
+    height: 5px;
+    background-color: white;
+  }
 }
