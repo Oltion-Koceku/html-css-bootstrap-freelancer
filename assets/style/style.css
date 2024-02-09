@@ -1,10 +1,10 @@
-[class^='container'],
+/* [class^='container'],
 [class^='col'],
 .debug {
   background-color: rgba(0, 255, 0, .2);
   border: 1px solid black;
   min-height: 80px;
-}
+} */
 
 :root {
   --header: #2c3e50;
@@ -14,6 +14,7 @@
 
 header {
   background-color: var(--header);
+  height: 70px;
 }
 section{
 padding: 70px 0;
@@ -120,6 +121,9 @@ section.about {
   background-color: var(--start);
   color: white;
 }
+.about button{
+background-color: var(--start);
+}
 /* card */
 /* portfolio */
 .p-card-left{
@@ -135,3 +139,35 @@ padding-top: 20px;
 padding-bottom: 20px;
 }
 /* footer */
+footer section{
+padding: 0;
+color: white;
+}
+section.footer-top{
+background-color: var(--location);
+}
+section.footer-bottom{
+background-color: var(--header);
+}
+.social{
+border-radius: 50%;
+width: 40px;
+height: 40px;
+border:1px solid white;
+}
+.social i{
+font-size: 20px;
+}
+
+.footer-top .container-sce .row{
+padding: 70px 0;
+}
+.container-sce .row .col-12{
+padding-bottom: 50px;
+}
+.container-sce .row .col-12:last-child{
+padding-bottom: 0px;
+}
+.footer-bottom{
+padding: 30px 0;
+}
