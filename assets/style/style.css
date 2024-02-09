@@ -6,6 +6,21 @@
   min-height: 80px;
 }
 
+:root {
+  --header: #2c3e50;
+  --start: #1abc9c;
+  --location: #3a546d;
+}
+
+header {
+  background-color: var(--header);
+}
+section{
+padding: 70px 0;
+}
+h2{
+font-weight: 700;
+}
 .container-sc {
   width: 70%;
   margin: 0 auto;
@@ -21,13 +36,26 @@
   width: 85%;
   margin: 0 auto;
 }
-a{
-text-decoration: none;
-color: black;
+
+a {
+  text-decoration: none;
+  color: black;
 }
-h2{
-font-size: 40px;
+
+h2 {
+  font-size: 40px;
 }
+
+/* utility */
+.form-sc {
+  border: 0;
+  border-bottom: 1px solid gray;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* /utility */
+
 /* star */
 .icon {
   padding-left: 10px;
@@ -39,6 +67,7 @@ font-size: 40px;
   font-size: 20px;
   color: white;
 }
+
 .icon.black i {
   font-size: 20px;
   color: black;
@@ -55,6 +84,7 @@ font-size: 40px;
   height: 5px;
   background-color: white;
 }
+
 .star.black div:first-child,
 .star.black div:last-child {
   width: 13%;
@@ -65,14 +95,43 @@ font-size: 40px;
 /* /star */
 
 /* header */
-.hamburger{
-border: 2px solid gray;
-padding: 5px 10px;
-width: 50px;
-height: 40px;
+.hamburger {
+  border: 2px solid gray;
+  padding: 5px 10px;
+  width: 50px;
+  height: 40px;
 }
-.hamburger i{
-font-size: 25px;
+
+.hamburger i {
+  font-size: 25px;
+}
+.logo h1{
+font-size: 20px;
+font-weight: 700;
+}
+div nav ul{
+width: 250px;
 }
 /* main */
+section.start {
+  background-color: var(--start);
+}
+section.about {
+  background-color: var(--start);
+  color: white;
+}
+/* card */
+/* portfolio */
+.p-card-left{
+padding-left: 20px;
+}
+.p-card-right{
+padding-right: 20px;
+}
+.p-card-top{
+padding-top: 20px;
+}
+.p-card-bottom{
+padding-bottom: 20px;
+}
 /* footer */

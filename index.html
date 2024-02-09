@@ -25,15 +25,15 @@
     <div class="container">
       <div class="row">
         <div class="col debug d-flex align-items-center ">
-          <div class="logo">START BOOTSTRAP</div>
+          <div class="logo text-white "><h1>START BOOTSTRAP</h1></div>
         </div>
         <!-- menu -->
         <div class="col debug d-none d-md-block d-flex justify-content-end  ">
           <nav class="w-100 h-100 d-flex justify-content-end align-items-center ">
-            <ul class="d-flex justify-content-between w-50 list-unstyled">
-              <li><a href="#">PROFILO</a></li>
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">CONTACT</a></li>
+            <ul class="d-flex justify-content-between list-unstyled">
+              <li><a class="text-white" href="#">PROFILO</a></li>
+              <li><a class="text-white" href="#">ABOUT</a></li>
+              <li><a class="text-white" href="#">CONTACT</a></li>
             </ul>
           </nav>
         </div>
@@ -46,12 +46,16 @@
   </header>
   <main>
     <!-- start bootstrap -->
-    <section class="start">
+    <section class="start ">
       <div class="container-sc">
-        <div class="row">
-          <div class="col-12 d-flex align-items-center justify-content-center "></div>
+        <div class="row text-white">
           <div class="col-12 d-flex align-items-center justify-content-center ">
-            <h1>START BOOTSTRAP</h1>
+            <div class="hero w-25 ">
+              <img src="assets/img/img/avatar.svg" alt="">
+            </div>
+          </div>
+          <div class="col-12 d-flex align-items-center justify-content-center ">
+            <h2>START BOOTSTRAP</h2>
           </div>
           <div class="col-12 d-flex align-items-center justify-content-center ">
             <div class="star d-flex justify-content-center align-items-center ">
@@ -80,12 +84,31 @@
               <div></div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-xl-4"></div>
-          <div class="col-12 col-md-6 col-xl-4"></div>
-          <div class="col-12 col-md-6 col-xl-4"></div>
-          <div class="col-12 col-md-6 col-xl-4"></div>
-          <div class="col-12 col-md-6 col-xl-4"></div>
-          <div class="col-12 col-md-6 col-xl-4"></div>
+          <!-- card -->
+          <div class="container d-grid">
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 ">
+              <div class="col ">
+                <div class="card-sc w-100 mb-3"><img class="w-100 " src="assets/img/img/cabin.png" alt=""></div>
+              </div>
+              <div class="col">
+                <div class="card-sc w-100 mb-3"><img class="w-100 " src="assets/img/img/cake.png" alt=""></div>
+              </div>
+              <div class="col ">
+                <div class="card-sc w-100 mb-3"><img class="w-100 " src="assets/img/img/circus.png" alt=""></div>
+              </div>
+              <div class="col ">
+                <div class="card-sc w-100 mb-3"><img class="w-100 " src="assets/img/img/game.png" alt=""></div>
+              </div>
+              <div class="col">
+                <div class="card-sc w-100 mb-3"><img class="w-100" src="assets/img/img/safe.png" alt=""></div>
+              </div>
+              <div class="col ">
+                <div class="card-sc w-100 mb-3"><img class="w-100" src="assets/img/img/submarine.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
     </section>  
@@ -103,11 +126,16 @@
               <div></div>
             </div>
           </div>
-          <div class="col-12 col-md-6 ">
-            <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-          </div>
-          <div class="col-12 col-md-6 ">
-            <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or graphiic artist looking to share your projects, this teplate is the perfect starting point!</p>
+          <div class="container-sc">
+            <div class="container-fluid d-md-flex ">
+
+              <div class="col-12 col-md-6  ">
+                <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+              </div>
+              <div class="col-12 col-md-6 ">
+                <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or graphiic artist looking to share your projects, this teplate is the perfect starting point!</p>
+              </div>
+            </div>
           </div>
           <div class="col-12 text-center">Download</div>
         </div>
@@ -127,7 +155,20 @@
               <div></div>
             </div>
           </div>
-          <div class="col-12 text-center ">Forum</div>
+          <div class="col-12">
+            <div class="container-sc">
+              <div class="container-fluid">
+                <form action="#">
+                  <input type="text" class="form-control my-3 form-sc" id="formGroupExampleInput" placeholder="Nome">
+                  <input type="email" class="form-control my-3 form-sc" id="formGroupExampleInput" placeholder="Email Adress">
+                  <input type="text" class="form-control my-3 form-sc" id="formGroupExampleInput" placeholder="Phone Number">
+                  <textarea class="form-control form-sc" placeholder="Message" style="height: 100px" rows="4"></textarea>
+                  <button class="btn btn-danger my-3">Send</button>
+                </form>
+              </div>
+            </div>
+            
+          </div>
         </div>
       </div>
     </section>  
